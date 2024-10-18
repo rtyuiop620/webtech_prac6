@@ -1,77 +1,102 @@
 /* General styles */
 body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #e0f7fa; /* Light cyan background */
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-  }
-  
-  h1 {
-    font-size: 2.5rem;
-    color: #01579b; /* Dark blue for heading */
-  }
-  
-  h2 {
-    font-size: 1.5rem;
-    color: #0277bd; /* Lighter blue for subheading */
-  }
-  
-  fieldset {
-    border: none;
-    padding: 0;
-    background-color: #ffffff; /* White background for form */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    border-radius: 8px;
-    padding: 1.5rem;
-  }
-  
-  .inactive {
-    display: none;
-  }
-  
-  #error {
-    color: #d32f2f; /* Red for error message */
-    font-weight: bold;
-  }
-  
-  /* Form styles */
-  input[type="text"], select {
-    padding: 0.5rem;
-    margin: 0.5rem 0;
-    width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9fbe7; /* Pale yellow for input fields */
-  }
-  
-  input[type="submit"] {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 0.75rem;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Menu styles */
-  #menu {
-    text-align: center;
-    background-color: #fce4ec; /* Light pink background for menu */
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for emphasis */
-  }
-  
-  .hidden {
-    display: none;
-  }
+  font-family: 'Open Sans', sans-serif;
+  background-color: #88e3ef; /* Light cyan background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  transition: background-color 0.3s ease-in-out;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #01579b; /* Dark blue for heading */
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+h2 {
+  font-size: 1.75rem;
+  color: #0277bd; /* Lighter blue for subheading */
+  margin-bottom: 1rem;
+}
+
+/* Fieldset styles */
+fieldset {
+  border: none;
+  background-color: #ffffff; /* White background for form */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Deeper shadow for emphasis */
+  border-radius: 10px;
+  padding: 2rem;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+fieldset:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.inactive {
+  display: none;
+}
+
+#error {
+  color: #d32f2f; /* Red for error message */
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* Form styles */
+input[type="text"], select {
+  padding: 0.75rem;
+  margin: 0.75rem 0;
+  width: 320px;
+  border: 1px solid #b0bec5;
+  border-radius: 5px;
+  background-color: #f9fbe7; /* Pale yellow for input fields */
+  transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus, select:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Menu styles */
+#menu {
+  text-align: center;
+  background-color: #fce4ec; /* Light pink background for menu */
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* More emphasis with shadow */
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#menu:hover {
+  background-color: #f8bbd0; /* Slightly darker pink on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+  display: none;
+}
