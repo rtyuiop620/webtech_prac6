@@ -1,53 +1,88 @@
 /* Music screen styles */
 #music {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: #ffe082; /* Light amber background for the music screen */
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    max-width: 600px;
-    margin: 20px auto;
-  }
-  
-  .gif-display {
-    margin: 20px 0;
-    background-color: #fff3e0; /* Light orange background for the gif display */
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Light shadow for a floating effect */
-  }
-  
-  .gif {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #ffab40; /* Vibrant orange border for gifs */
-    border-radius: 10px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-  }
-  
-  #control-bar {
-    margin: 10px 0;
-    background-color: #ffd180; /* Pale orange background for the control bar */
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-  }
-  
-  #play-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-  
-  #play-button img {
-    width: 50px;
-    height: 50px;
-    transition: transform 0.3s ease; /* Smooth transition for hover effect */
-  }
-  
-  #play-button img:hover {
-    transform: scale(1.1); /* Enlarges the play button slightly on hover */
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #ffecb3; /* Soft amber background for a warmer feel */
+  padding: 2rem;
+  border-radius: 16px; /* More rounded corners for a modern look */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow for a polished effect */
+  max-width: 450px; /* Increased width for better content spacing */
+  max-height: 300px; 
+  margin: 30px auto; /* More balanced margin */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#music:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
+}
+
+.gif-display {
+  margin: 25px 0;
+  background-color: #fff8e1; /* Softer light orange background */
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle floating effect */
+  max-width: 100%;
+}
+
+.gif {
+  max-width: 100%;
+  height: auto;
+  border: 3px solid #ffa726; /* Vibrant orange border for contrast */
+  border-radius: 12px; /* Slightly more rounded */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Deeper shadow for more depth */
+  transition: transform 0.3s ease-in-out;
+}
+
+.gif:hover {
+  transform: translateY(-5px); /* Adds a floating effect on hover */
+}
+
+#control-bar {
+  margin: 15px 0;
+  background-color: #ffcc80; /* Softer pale orange background */
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow for emphasis */
+  width: 100%; /* Ensures control bar spans the full content width */
+}
+
+#play-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+#play-button img {
+  width: 60px; /* Increased size for better visibility */
+  height: 60px;
+  transition: transform 0.3s ease;
+}
+
+#play-button img:hover {
+  transform: scale(1.15); /* Enlarges the play button slightly more for a bolder hover effect */
+}
+
+/* Global enhancements */
+body {
+  background-color: #9ae6ff; /* Light green background for a fresh, clean look */
+  font-family: 'Open Sans', sans-serif;
+  color: #333; /* Darker text for better readability */
+}
+
+h1, h2 {
+  color: #37474f; /* Darker, more neutral colors for titles */
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
