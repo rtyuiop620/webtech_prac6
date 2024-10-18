@@ -1,0 +1,53 @@
+/* Music screen styles */
+#music {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #ffe082; /* Light amber background for the music screen */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .gif-display {
+    margin: 20px 0;
+    background-color: #fff3e0; /* Light orange background for the gif display */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Light shadow for a floating effect */
+  }
+  
+  .gif {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ffab40; /* Vibrant orange border for gifs */
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  }
+  
+  #control-bar {
+    margin: 10px 0;
+    background-color: #ffd180; /* Pale orange background for the control bar */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  }
+  
+  #play-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #play-button img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  #play-button img:hover {
+    transform: scale(1.1); /* Enlarges the play button slightly on hover */
+  }
